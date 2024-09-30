@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Circulo</string>
+    <string name="Calcula">Calcular\n</string>
+    <string name="radio">Radio</string>
+    <string name="radioo">Radio</string>
+    <string name="rd1">Radio\n</string>
+    <string name="rd2" />
+    <string name="long1">Longitud</string>
+    <string name="area1">Area</string>
+    <string name="Vol1">Volumen</string>
+    <string name="long2" />
+    <string name="Area2" />
+    <string name="Vol2" />
+    <string name="poner">\n</string>
+    <string name="poner1">radio\n</string>
+</resources>
