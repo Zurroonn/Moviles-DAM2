@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Cuarto</string>
+    <string name="titulo">Calculadora de numeros primos:</string>
+    <string name="descrip">Introduce un numero y aparecerá el numero primo.Ej: si pones 6 aparecera el 6 numero primo, el 11</string>
+    <string name="poner">Number</string>
+    <string name="butt">CALCULAR</string>
+    <string name="finale">Resultado</string>
+    <string name="JEJE">Introduce un numero y aparecerá el numero primo.Ej: si pones 6 aparecera el 6 numero primo, el 11</string>
+</resources>

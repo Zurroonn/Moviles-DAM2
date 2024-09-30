@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Tercero</string>
+    <string name="number">Number</string>
+    <string name="calc">Factorial\n</string>
+    <string name="res">Calculo</string>
+    <string name="titulo">Calculo del factorial:\n</string>
+</resources>
