@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Widgerts</string>
+    <string name="but1">Calcular\n</string>
+    <string name="operando1">Operando1</string>
+    <string name="operando2">Operando2</string>
+    <string name="rb1">Sumar\n</string>
+    <string name="rd2">Restar</string>
+    <string name="rd3">Multiplicar</string>
+    <string name="rd4">Dividir\n</string>
+    <string name="txt1">Resultado</string>
+</resources>
