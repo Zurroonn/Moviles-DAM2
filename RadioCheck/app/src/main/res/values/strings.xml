@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">RadioCheck</string>
+    <string name="rb1">Rojo</string>
+    <string name="rb2">Azul\n</string>
+    <string name="rb3">Verde</string>
+    <string name="rb4">Blanco\n</string>
+    <string name="rb5">Negro</string>
+    <string name="check1">Negrita</string>
+    <string name="check2">Cursiva</string>
+    <string name="negrita">Negrita</string>
+    <string name="cursiva">Cursiva</string>
+    <string name="check3">Serif</string>
+    <string name="check4">MonoSpace</string>
+    <string name="txt1">Puedes introducir un texto\n</string>
+    <string name="txt2">Tipo de letra</string>
+    <string name="txt3">Color de fondo</string>
+    <string name="txt4">Color de la fuente\n</string>
+    <string name="rb6">Rojo</string>
+    <string name="rb7">Azul\n</string>
+    <string name="rb8">Verde</string>
+    <string name="rb9">Blanco\n</string>
+    <string name="rb10">Negro</string>
+    <string name="txt5">Color de fuente\n</string>
+</resources>
