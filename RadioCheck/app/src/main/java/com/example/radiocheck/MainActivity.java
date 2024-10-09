@@ -73,11 +73,17 @@ public class MainActivity extends AppCompatActivity {
             style = Typeface.ITALIC;
         }
 
+        if(cb3.isChecked() && cb4.isChecked()){
+            Typeface sermon= Typeface.create("serif-monospace",Typeface.NORMAL);
+            textView.setTypeface(sermon, style);
+        }else
         if (cb3.isChecked()) {
             textView.setTypeface(Typeface.SERIF, style);
         } else if (cb4.isChecked()) {
             textView.setTypeface(Typeface.MONOSPACE, style);
-        } else {
+
+        }
+        else {
             textView.setTypeface(Typeface.SANS_SERIF, style);
         }
     }
