@@ -18,7 +18,7 @@
     <string name="rb6">Rojo</string>
     <string name="rb7">Azul\n</string>
     <string name="rb8">Verde</string>
-    <string name="rb9">Blanco\n</string>
-    <string name="rb10">Negro</string>
+    <string name="rb9">Negro\n</string>
+    <string name="rb10">Blanco</string>
     <string name="txt5">Color de fuente\n</string>
 </resources>

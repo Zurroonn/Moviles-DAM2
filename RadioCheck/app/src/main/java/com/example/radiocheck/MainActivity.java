@@ -5,6 +5,7 @@ import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
@@ -44,18 +45,23 @@ public class MainActivity extends AppCompatActivity {
         rg1 = findViewById(R.id.radioGroup); // Color de fondo
         rg2 = findViewById(R.id.radioGroup2); // Color de fuente
 
-        // Escuchar cambios en los CheckBoxes para el tipo de letra
+
         cb1.setOnCheckedChangeListener((buttonView, isChecked) -> setTypeface());
         cb2.setOnCheckedChangeListener((buttonView, isChecked) -> setTypeface());
         cb3.setOnCheckedChangeListener((buttonView, isChecked) -> setTypeface());
         cb4.setOnCheckedChangeListener((buttonView, isChecked) -> setTypeface());
+        /*cb4.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                METODO DONDE TENDRIA QUE PONER EL TYPEFACE SI NO QUISIERA PONER LO DE ARRIBA
+            }
+        })*/
 
-        // Escuchar cambios en los RadioGroups para cambiar color de fondo y fuente
         rg1.setOnCheckedChangeListener((group, checkedId) -> setBackgroundColor(checkedId));
         rg2.setOnCheckedChangeListener((group, checkedId) -> setTextColor(checkedId));
     }
 
-    // Método para configurar el tipo de letra según los CheckBoxes
+
     private void setTypeface() {
         int style = Typeface.NORMAL;
 
