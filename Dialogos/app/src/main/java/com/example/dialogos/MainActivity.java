@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         // Aquí añadimos la lógica para el botón y el diálogo
-        Button buttonShowDialog = findViewById(R.id.button);
+        @SuppressLint({"MissingInflatedId", "LocalSuppress"}) Button buttonShowDialog = findViewById(R.id.button);
         @SuppressLint({"LocalSuppress", "MissingInflatedId"}) TextView responseText = findViewById(R.id.textView);
 
         buttonShowDialog.setOnClickListener(v -> {
