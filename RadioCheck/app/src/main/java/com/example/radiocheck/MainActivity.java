@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
         /*cb4.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
-                METODO DONDE TENDRIA QUE PONER EL TYPEFACE SI NO QUISIERA PONER LO DE ARRIBA
+               setBackgroundColor();
             }
         })*/
 
