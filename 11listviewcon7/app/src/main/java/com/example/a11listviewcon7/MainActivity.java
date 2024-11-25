@@ -3,8 +3,10 @@ package com.example.a11listviewcon7;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.os.Bundle;
-import android.util.SparseBooleanArray;
+import android.view.ContextMenu;
 import android.view.LayoutInflater;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -12,6 +14,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -35,7 +38,8 @@ public class MainActivity extends AppCompatActivity  {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
-        ListView l = (ListView) findViewById(R.id.listview);
+        @SuppressLint({"MissingInflatedId", "LocalSuppress"}) ListView l = (ListView) findViewById(R.id.lista);
+        l.setOnCreateContextMenuListener(this);
         AdaptadorPersonalizado adap= new AdaptadorPersonalizado(this, android.R.layout.simple_list_item_single_choice,elementos);
         l.setAdapter(adap);
         l.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -92,6 +96,43 @@ public class MainActivity extends AppCompatActivity  {
 
 
     }
+    @Override
+    public boolean onContextItemSelected(MenuItem item) {
+        ListView starks = (ListView) findViewById(R.id.lista);
+        AdapterView.AdapterContextMenuInfo info = (AdapterView.AdapterContextMenuInfo)
+                item.getMenuInfo();
+
+        if (item.getItemId() == R.id.matar) {
+
+            Toast.makeText(getApplicationContext(), "Hemos matado a " + starks.getItemAtPosition(info.position),
+                    Toast.LENGTH_LONG).show();
+            return true;
+        }
+
+
+        if (item.getItemId() == R.id.enviarmensjae) {
+
+            Toast.makeText(getApplicationContext(), "Hemos matado a " + starks.getItemAtPosition(info.position),
+                    Toast.LENGTH_LONG).show();
+            return true;
+        }
+        if (item.getItemId() == R.id.sanar) {
+
+            Toast.makeText(getApplicationContext(), "Hemos matado a " + starks.getItemAtPosition(info.position),
+                    Toast.LENGTH_LONG).show();
+            return true;
+        }
+        return true;
+    }
+@Override
+public void onCreateContextMenu(ContextMenu menu,
+                                View v, ContextMenu.ContextMenuInfo menuInfo) {
+    ListView starks = (ListView) findViewById(R.id.lista);
+    registerForContextMenu(starks);
+    MenuInflater m=getMenuInflater();
+    m.inflate(R.menu.menu,menu);
+    super.onCreateContextMenu(menu, v, menuInfo);
+}
 
 
 }

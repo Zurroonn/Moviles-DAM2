@@ -2,4 +2,10 @@
     <string name="app_name">ListView</string>
     <string name="tx1">Elige</string>
     <string name="tx2">Selección</string>
+    <string-array name="lannisters">
+        <item>Tyrion</item>
+        <item>Cersei</item>
+        <item>Jaime</item>
+        <item>Tywin</item>
+    </string-array>
 </resources>
