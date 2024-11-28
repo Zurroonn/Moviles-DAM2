@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -14,6 +15,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+
+import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity {
     Button bt1, bt2, bt3;
@@ -33,8 +36,12 @@ public class MainActivity extends AppCompatActivity {
         bt1 = findViewById(R.id.button1);
         bt2 = findViewById(R.id.button2);
         bt3 = findViewById(R.id.button3);
-        Intent i = new Intent(Intent.ACTION_SEND);
+        Intent i = getIntent();
 
+        if(i.getAction().equals(Intent.ACTION_SEND)) {
+            TextView tv=findViewById(R.id.tes);
+            tv.setText("Texto recibido"+i.getStringExtra(Intent.EXTRA_TEXT));
+        }
         bt1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

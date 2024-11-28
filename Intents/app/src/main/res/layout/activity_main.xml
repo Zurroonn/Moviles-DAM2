@@ -86,16 +86,6 @@
         app:layout_constraintTop_toBottomOf="@+id/button2"
         tools:ignore="MissingConstraints" />
 
-    <TextView
-        android:id="@+id/respuesta"
-        android:layout_width="325dp"
-        android:layout_height="286dp"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="37dp"
-        android:text="@string/texto_recibido"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/texto4" />
-
     <EditText
         android:id="@+id/texto5"
         android:layout_width="354dp"
@@ -107,4 +97,14 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/tes"
+        android:layout_width="314dp"
+        android:layout_height="276dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="13dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/texto4" />
 </androidx.constraintlayout.widget.ConstraintLayout>
