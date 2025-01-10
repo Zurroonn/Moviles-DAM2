@@ -31,7 +31,7 @@ ImageView img3;
                 .into(img1); // Tu ImageView
         img2 = findViewById(R.id.imageView2);
         Picasso.get() // Contexto
-                .load("htt://1.bp.blogspot.com/-iCRAMdzP0Ys/YXWu1pW41BI/AAAAAAAAPHs/mGiZABP24IUZlZ_i_Ln-ANcRxUlXdR-EgCLcBGAsYHQ/s320/gato.jpg") // URL de la imagen
+                .load("https://1.bp.blogspot.com/-iCRAMdzP0Ys/YXWu1pW41BI/AAAAAAAAPHs/mGiZABP24IUZlZ_i_Ln-ANcRxUlXdR-EgCLcBGAsYHQ/s320/gato.jpg") // URL de la imagen
                 .placeholder(R.drawable.cargando) // Imagen de carga
                 .error(R.drawable.error) // Imagen de error
                 .into(img2); // Tu ImageView
