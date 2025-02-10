@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.pruprac2rolmor"
+    namespace = "com.example.exev2_rollan_moralejo"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.example.pruprac2rolmor"
+        applicationId = "com.example.exev2_rollan_moralejo"
         minSdk = 29
         targetSdk = 34
         versionCode = 1
